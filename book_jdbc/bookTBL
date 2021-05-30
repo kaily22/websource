@@ -1,0 +1,18 @@
+--bookTBL
+
+create table bookTBL(
+code NUMBER(4) PRIMARY KEY NOT NULL,
+title VARCHAR2(50) NOT NULL, 
+writer VARCHAR2(20) NOT NULL, 
+price NUMBER(8) NOT NULL);
+
+DROP TABLE bookTBL;
+
+INSERT INTO bookTBL(code,title,writer,price) VALUES(1000,'이것이 자바다','신용권',32000);
+INSERT INTO bookTBL(code,title,writer,price) VALUES(1001,'이것이 오라클이다','우재남',32000);
+INSERT INTO bookTBL(code,title,writer,price) VALUES(1002,'점프 투 파이썬','박종용',28000);
+INSERT INTO bookTBL(code,title,writer,price) VALUES(1003,'HTML5+CSS3','신용권',30000);
+INSERT INTO bookTBL(code,title,writer,price) VALUES(1004,'JAVA ESSENTIAL','황기태',36000);
+
+SELECT* FROM bookTBL;
+
